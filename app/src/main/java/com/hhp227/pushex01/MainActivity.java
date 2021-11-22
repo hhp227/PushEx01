@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         playView = findViewById(R.id.playView);
         up = findViewById(R.id.U_button);
         left = findViewById(R.id.L_button);
@@ -30,17 +29,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()) {
-            case R.id.U_button :
+        switch (v.getId()) {
+            case R.id.U_button:
                 playView.up();
                 break;
-            case R.id.L_button :
+            case R.id.L_button:
                 playView.left();
                 break;
-            case R.id.D_button :
+            case R.id.D_button:
                 playView.down();
                 break;
-            case R.id.R_button :
+            case R.id.R_button:
                 playView.right();
                 break;
         }
